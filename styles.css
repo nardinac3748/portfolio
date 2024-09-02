@@ -1,0 +1,148 @@
+body{
+    background-color: #FEF5EF;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    color: white;
+}
+header img{
+    max-width: 15rem;
+    margin: .2rem;
+}
+header{
+    background-color: #231F20;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+h1{
+    font-size: 2rem;
+}
+nav>a{
+    color: black;
+    padding: .5rem;
+    background-color: white;
+    text-decoration: none;
+    display: flex;
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+nav>a:hover{
+    background-color: #FEF5EF;
+}
+section{
+    margin: 1rem;
+    background-color: #231F20;
+    padding-bottom: .3rem;
+}
+section h2{
+    background-color: #5B85AA;
+    margin: 0;
+    padding: .8rem;
+    font-size: 2rem;
+}
+section p{
+    margin: .8rem;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+}
+.resume{
+    margin: .8rem;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+.resume:hover{
+    color: #FEF5EF;
+}
+footer{
+    margin: 0;
+    padding: 0;
+}
+footer section{
+    margin: 0;
+    background-color: #B98389;
+}
+footer h2{
+    background-color: #B98389;
+    margin: 0;
+    padding: .5rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+}
+.graphic{
+    display: flex;
+    flex-wrap: wrap;
+}
+.graphic img{
+    max-width: 26.5rem;
+    width: max-content;
+    object-fit: contain;
+    margin: .8rem;
+}
+iframe{
+    margin: .8rem;
+    max-width: 26.5rem;
+}
+.writing{
+    background-color: #232C33;
+    margin: .8rem;
+    display: grid;
+}
+.writing a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: .8rem;
+}
+.writing a:hover{
+    color: #FEF5EF;
+}
+@media (min-width:600px){
+    header{
+        justify-content: space-between;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    nav>a{
+        font-size: 1.8rem;
+    }
+    .graphic img{
+        max-width: 30rem;
+    }
+    iframe{
+        max-width: 30rem;
+    }
+}
+@media (min-width:1200px){
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    section h2, .writing h3{
+        font-size: 2.4rem;
+    }
+    section p, .resume{
+        font-size: 1.8rem;
+    }
+    .graphic img{
+        max-width: 40rem;
+    }
+    .writing-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
